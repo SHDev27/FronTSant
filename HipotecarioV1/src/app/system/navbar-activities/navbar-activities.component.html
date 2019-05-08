@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-sm sticky-top navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarActivities"
+    aria-controls="navbarActivities" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarActivities">
+    <ul class="navbar-nav m-auto">
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/datos-personales']" routerLinkActive="active"><i
+            class="fa fa-info fa-2x"></i><br />Datos<br />personales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/domicilio']" routerLinkActive="active"><i
+            class="fa fa-home fa-2x"></i><br /><br />Domicilio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/historial-crediticio']" routerLinkActive="active"><i
+            class="fa fa-credit-card-alt fa-2x"></i><br />Historial<br />Crediticio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/ingresos']" routerLinkActive="active"><i
+            class="fa fa-money fa-2x"></i><br /><br />Ingresos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/ofertas']" routerLinkActive="active"><i
+            class="fa fa-dollar fa-2x"></i><br /><br />Ofertas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/datos-adicionales']" routerLinkActive="active"><i
+            class="fa fa-paper-plane fa-2x"></i><br />Datos<br />adicionales</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link badge" [routerLink]="['/carga-documentos']" routerLinkActive="active"><i
+            class="fa fa-cloud-upload fa-2x"></i><br />Carga de<br />documentos</a>
+      </li>
+    </ul>
+  </div>
+</nav>

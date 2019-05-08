@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+.bg-img {
+    background: url(./assets/login-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.bg-color {
+    background: none;
+    background-color: #fff;
+}

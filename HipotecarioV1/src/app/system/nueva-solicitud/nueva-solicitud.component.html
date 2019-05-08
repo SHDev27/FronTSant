@@ -1,0 +1,102 @@
+
+    <section style="background-color: lightblue; padding-bottom: 2%; padding-top: 2%;">
+      <div class="col-md-12" style="background-color: darkolivegreen;">
+        <p class="parafoRadius" style="color:oldlace; background-color: seagreen;">
+          1 nueva-solicitud works!
+        </p>
+      </div>
+      <div class="col-md-12" style="background-color: darkolivegreen;">
+        <p class="parafoRadius" style="color:black; background-color: oldlace;">
+          2 nueva-solicitud works!
+        </p>
+      </div>
+      <div class="col-md-12" style="background-color: darkolivegreen;">
+        <p  class="parafoRadius" style="color:oldlace; background-color: red;">
+          3 nueva-solicitud works!
+        </p>
+      </div>
+    </section>
+    
+
+    <section style="background-color: lightblue; margin-top: 1%; margin-bottom: 1%;">
+      <div style=" margin: 2%; padding: 1%;">
+        <span>
+          Passw
+        </span>
+        <input type="text" placeholder="{{pasa}}" [(ngModel)]="temp">
+      </div>
+    </section>
+
+    
+
+    <!-- formuklario -->
+    <!-- <section class="col-12" (ngSubmit)="onSubmit(modalTemplate)" style="background-color: lightblue; padding-bottom: 2%;"> -->
+      <form class="frm" style="margin-top: 1%; margin-bottom: 1%;">
+        <div style="padding-top: 2%">
+          <span style="padding-left: 1%;">
+            Nombre
+          </span>
+          <input type="text" placeholder="{{pasa}} " id="Nombre" required [(ngModel)]="modelDomi.Nombre" name="Nombre" #Nombre="ngModel">
+        </div>
+        <div style="padding-top: 2%">
+          <span>
+            Apellido
+          </span>
+          <input type="text" placeholder="{{pasa}} ">
+        </div>
+        <div style="padding-top: 2%">
+          <span>
+            Fecha
+          </span>
+          <input type="text" placeholder="{{tempDate}}"  >
+        </div>
+        <div style="padding-top: 2%; padding-left: 2%; padding-bottom: 2%;">
+          <button type="button" (click) = "takePassw(PopupFail)">ServicioPassw</button>
+        </div>
+      </form>
+      <!-- [(ngModel)]="temp" #temp="ng" -->
+    <!-- </section> -->
+
+    <section style="margin-top: 1%; margin-bottom: 1%; background-color: goldenrod;">
+      <div class="col-md-5" style="padding-top: 1%;">
+        <button (click)="Catedra()">
+          Catedra
+        </button>
+      </div>
+      <div class="col-md-5">
+        <button (click)=noCatedra()>
+          noCatedra
+        </button>
+      </div>
+
+      <div *ngIf="!ShowPrro" class="col-md-10" style="margin: 10px; background-color: bisque;">
+        <p class="parafoRadius">
+          Bueno, para la mayoría de estos programadores UI,
+           porque no lo entienden. Ven cosas de textualidad,
+           no de forma visual. La cultura del software libre
+           viene muy lejos de la cultura de UNIX, y UNIX está 
+           muy orientada a los expertos. Los expertos no necesitan 
+           una "buena interfaz de usuario": ya saben exactamente 
+           qué hacer y solo quieren poder hacerlo lo más rápido posible.
+          Esto está relacionado con el problema, que es que los programadores 
+          de software libre codifican principalmente para ellos mismos. 
+          -y como entienden el software por completo e intuitivamente, 
+          parece que la interfaz de usuario es mala para ellos, para ellos, 
+          tiene mucho sentido.
+        </p>
+      </div>
+    </section>
+
+    <ng-template #PopupFail >
+        <div class="modal-header">
+          <h5 class="modal-title pull-left">try ng-template</h5>
+        </div>
+        <div class="modal-body">
+          y luego :v
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary " data-dismiss="modal" (click)="noCatedra()" >Cerrar</button>
+        </div>
+      </ng-template>
+
+

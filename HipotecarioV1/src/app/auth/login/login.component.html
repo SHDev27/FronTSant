@@ -1,0 +1,36 @@
+<div class="modal-dialog text-center">
+  <div class="col-sm-11 main-section">
+    <div class="modal-content">
+      <div class="col-12 user-img">
+        <img src="../../../assets/login-avatar.png" alt="">
+      </div>
+      <form class="col-12" (ngSubmit)="onSubmit(modalTemplate)" #loginForm="ngForm" autocomplete="off">
+        <div class="form-group" id="user-group">
+          <input type="text" class="form-control" placeholder="Usuario" id="usuario" required [(ngModel)]="model.usuario"
+            name="usuario" #usuario="ngModel" />
+        </div>
+        <div class="form-group" id="password-group">
+          <input type="password" class="form-control" placeholder="Contraseña" id="contrasena" required [(ngModel)]="model.contrasena"
+            name="contrasena" #contrasena="ngModel" />
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid"><i class="fa fa-sign-in"></i>
+          Ingresar</button>
+      </form>
+      <div class="col-12 forgot-password">
+        <a href="#">Recordar contraseña</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #modalTemplate>
+  <div class="modal-header">
+    <h5 class="modal-title pull-left">Inicio de sesión</h5>
+  </div>
+  <div class="modal-body">
+    Información incorrecta, verifique.
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary " data-dismiss="modal" (click)="modalRef.hide()">Aceptar</button>
+  </div>
+</ng-template>
